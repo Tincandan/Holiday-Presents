@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<!-- Load an icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <title>Holiday Present</title>
+
+  </head>
+  <body>
+    <!---Nav Bar --->
+ <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">LOGO</a></div>
+    <div class="nav-items">
+        <li><a href="#">Thanksgiving</a></li>
+        <li><a href="#">Christmas</a></li>
+        <li><a href="#">Miscellaneous</a></li>
+        <li><a href="#">cart</a></li>
+         {{#if loggedIn}}
+         <li><a href="#">logout</a></li>
+         {{else}}
+        <li><a href="#">login</a></li>
+        {{/if}}
+        <!--- Search --->
+    <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+      <div class="content">
+         <header class="space">Responsive Navbar with Search Box</header>
+         <div class="space text">
+            using HTML CSS &amp JavaScript
+         </div>
+      </div>
+
+        <!--- Hero Image -->
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Save for the Holdiays</h1>
+        <p>Snatch those presents early!</p>
+        <button>Shop now</button>
+      </div>
+    </div>
+
+    <!--- Render --->
+    <main>{{{body}}}</main>
+
+  </body>
+
+</html>
