@@ -1,6 +1,34 @@
 {
+  "name": "holiday-presents",
+  "version": "1.0.0",
+  "description": "E-commerce site, that will be deployed on Heroku, and meet the requirements for Group Project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tincandan/Holiday-Presents.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tincandan/Holiday-Presents/issues"
+  },
+  "homepage": "https://github.com/Tincandan/Holiday-Presents#readme",
   "dependencies": {
-    "bulma": "^0.9.4",
-    "sequelize": "^6.25.6"
+    "bcrypt": "^5.1.0",
+    "connect-session-sequelize": "^6.1.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.0",
+    "mysql2": "^2.0.1",
+    "sequelize": "^5.21.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }
