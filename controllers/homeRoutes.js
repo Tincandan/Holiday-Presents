@@ -1,6 +1,17 @@
 const router = require('express').Router();
 const { Category, Customer, Cart, Product } = require('../models');
 
+// Render homepage view
+router.get('/', (req, res) => {
+    res.render('homepage', {loggedIn: req.session.logged_in});
+});
+
+// Render cart view
+router.get('/cart', (req, res) => {
+    res.render('cart', {loggedIn: req.session.logged_in});
+});
+
+// Render login view
 router.get('/login', (req, res) => {
     if (req.session.logged_in) {
       res.redirect('/');

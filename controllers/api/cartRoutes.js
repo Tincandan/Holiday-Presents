@@ -1,8 +1,8 @@
 const router = require('express').Router();
-const { Cart, Category, Customer, Product } = require('../models');
-const withAuth = require('../utils/auth');
+const { Cart, Category, Customer, Product } = require('../../models');
+const withAuth = require('../../utils/auth');
 
-router.get('/', withAuth, async(req,res) => {
+router.get('/', async(req,res) => {
     const cartData = await Cart.findAll({ include: Product, Customer }).catch((err) => {
         res.json(err);
     });
@@ -10,7 +10,7 @@ router.get('/', withAuth, async(req,res) => {
     res.render('all', { cart });
 })
 
-router.get('./cart/:id', withAuth, async(req, res) => {
+router.get('/:id', async(req, res) => {
     try{
         const cartData = await Cart.findByPk(req.params.id, { include: Product, Customer} );
         if(!cartData){
@@ -25,7 +25,7 @@ router.get('./cart/:id', withAuth, async(req, res) => {
     };
 });
 
-router.post('/', withAuth,(req, res) => {
+router.post('/', withAuth, async(req, res) => {
     try {
         const cartData = await Cart.create(req.body);
         res.status(200).json(cartData);
@@ -49,7 +49,7 @@ router.put('/:id', withAuth, async(req,res) => {
     }
 });
 
-router.delete('/:id', async(req,res) => {
+router.delete('/:id', withAuth, async(req,res) => {
     try {
         const cartData = await Cart.destroy({
             where: {
