@@ -1,22 +1,13 @@
 const router = require('express').Router();
 const { Category, Customer, Cart, Product } = require('../models');
-const withAuth = require('../utils/auth');
 
-// GET all categories for homepage
-
-
-// GET one category
-
-    // If the user is not logged in, redirect the user to the login page
-
-    // If the user is logged in, allow them to view the categories
-
-
-
-// GET one product
-
-    // If the user is not logged in, redirect the user to the login page
-
-    // If the user is logged in, allow them to view the product
+router.get('/login', (req, res) => {
+    if (req.session.logged_in) {
+      res.redirect('/');
+      return;
+    }
+  
+    res.render('login');
+});
 
 module.exports = router;
