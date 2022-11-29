@@ -3,7 +3,7 @@ const { Category, Customer, Cart, Product } = require('../models');
 
 // Render homepage view
 router.get('/', (req, res) => {
-    console.log(req.session.logged_in)
+    //console.log(req.session.logged_in)
     res.render('homepage', {loggedIn: req.session.logged_in});
 });
 
@@ -14,7 +14,7 @@ router.get('/cart', (req, res) => {
 
 // Render login view
 router.get('/login', (req, res) => {
-    console.log(req.session)
+    //console.log(req.session)
     if (req.session.logged_in) {
       res.redirect('/');
       return;
