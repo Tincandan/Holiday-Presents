@@ -2,7 +2,7 @@ const { Category } = require('../models');
 
 const categoryData = [
   {
-    category_name: ' Christmas',
+    category_name: 'Christmas',
   },
   {
     category_name: 'Thanksgiving',
