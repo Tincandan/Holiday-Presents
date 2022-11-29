@@ -4,14 +4,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Load an icon library -->
+    <!-- Font Awesome CSS -->
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-    <!--- Bootstraps --->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-
+    <!--- Bootstraps CSS // Causing Conflict with the Navebar Functionality --->
+    {{!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> --}}
 
     <!-- Bulma CSS -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
@@ -32,8 +31,8 @@
         <div class="wrapper site-header__wrapper">
           <div class="site-header__start">
             <ul class="">
-              <li class=""><a href="#">Thanksgiving</a></li>
-              <li class=""><a href="#">Miscellaneous</a></li>
+              <li class=""><a href="/">Home</a></li>
+              <li class=""><a href="/miscellaneous">Miscellaneous</a></li>
             </ul>
           </div>
           <div class="site-header__middle">
