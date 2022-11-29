@@ -1,4 +1,5 @@
 const { Model, DataTypes } = require('sequelize');
+const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 class Customer extends Model {
@@ -17,11 +18,11 @@ Customer.init(
         },
         user_name: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         contact_add: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull:true,
         },
         email: {
             type: DataTypes.STRING,

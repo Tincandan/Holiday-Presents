@@ -3,13 +3,15 @@ const { Cart, Category, Customer, Product } = require('../../models');
 
 // Create new user
 router.post('/', async (req, res) => {
+    //console.log(req);
     try {
         const dbUserData = await Customer.create({
-            username: req.body.username,
+            user_name: req.body.username,
             email: req.body.email,
             password: req.body.password,
+            contact_add: "",
         });
-        console.log(dbUserData);
+       // console.log(dbUserData);
 
         req.session.save(() => {
             req.session.logged_in = true;
