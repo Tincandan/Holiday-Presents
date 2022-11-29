@@ -15,10 +15,10 @@ Category.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
-    category_type: {
-      type: DataTypes.DATE,
-      allowNull: false,
-    }
+    //category_type: {
+      //type: DataTypes.DATE,
+      //allowNull: false,
+    //}
   },
   {
     sequelize,
