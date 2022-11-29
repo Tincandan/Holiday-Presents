@@ -1,4 +1,3 @@
-// Navbar
 let navToggle = document.querySelector(".nav__toggle");
 let navWrapper = document.querySelector(".nav__wrapper");
 
