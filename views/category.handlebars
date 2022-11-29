@@ -1,0 +1,9 @@
+<section class ="container">
+
+    <h3 class = "category-name">{{category.name}}</h3>
+    <section class = "flex-row justify-center">
+        {{#each category.products as |product|}}
+        {{> product-details}}
+        {{/each}}
+    </section>
+</section>
