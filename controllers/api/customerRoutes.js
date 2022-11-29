@@ -9,7 +9,8 @@ router.post('/', async (req, res) => {
             email: req.body.email,
             password: req.body.password,
         });
-        console.log(dbUserData)
+        console.log(dbUserData);
+
         req.session.save(() => {
             req.session.logged_in = true;
 
