@@ -1,5 +1,5 @@
-const seedCategories = require('./category-seeds');
-const seedProducts = require('./product-seeds');
+const seedCategories = require('./category');
+const seedProducts = require('./product');
 
 const sequelize = require('../config/connection');
 
