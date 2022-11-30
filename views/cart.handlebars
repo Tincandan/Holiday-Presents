@@ -1,5 +1,41 @@
-<div class="container is-fluid mgt-medium">
-    <h2 class="mgb-medium text-center">Shopping cart</h2>
+<div class="table-container is-fluid mgt-medium">
+    <table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th><abbr title="Product-Title">Product</abbr></th>
+    <th><abbr title="Product-Name">Name</abbr></th>
+      <th><abbr title="Product-Qty">Qty</abbr></th>
+      <th><abbr title="Product-Price">Amount</abbr></th>
+    </tr>
+  </thead>
+  {{!-- content body --}}
+    <tbody>
+    <tr>
+      <td>
+        <figure class="image is-128x128">
+            <img src="https://bulma.io/images/placeholders/128x128.png">
+        </figure>
+      </td>
+        <td><abbr title="pName">{{Product}}</abbr></td>
+      <td><div class="button-container">
+            <button class="cart-qty-plus" type="button" value="+">+</button>
+            <input type="text" name="qty" min="0" class="qty form-contol" value="0"/>
+            <button class="cart-qty-minus" type="button" value="-">-</button>
+        </div> 
+      </td>
+      <td ><abbr title="pPrice">{{Price}}</abbr></td>
+    </tr>
+    </tbody>
+      {{!-- content body end --}}
+  <tfoot>
+      <tr>
+      <th></th>
+    <th></th>
+      <th></th>
+      <th><abbr title="Total">Total = {{Total}}</abbr></th>
+    </tr>
+  </tfoot>
+{{!--  End of Tables --}}
+</div> 
 
-    </div>
 <script src="/js/cart.js"></script>
