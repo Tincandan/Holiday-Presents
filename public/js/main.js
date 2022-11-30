@@ -34,3 +34,4 @@ function showSearch() {
     searchToggle.setAttribute("aria-label", "Open search");
   }
 }
+
