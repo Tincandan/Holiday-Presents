@@ -1,36 +1,5 @@
-/* Base CSS */
-#root {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-  }
+  /* Extra Styling */
 
-/* Hero Image */
-/* The hero image */
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
-  
-    height: 50%;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Hero Image */
-  /* Place text in the middle of the image */
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-
-  /* Shopping Cart Styling */
 
   

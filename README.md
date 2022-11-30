@@ -40,6 +40,19 @@ SO THAT my small business can compete with other e-commerce business
 - UPC code
 - Checkout system
 
+## Testing
+```
+1. Add a .env file 
+2. npm i // to install npm
+3. mysql -u root -p // sign into MySQL
+4. SOURCE filename.sql // inject data 
+5. node server.js // create the tables
+6. npm run seed // seed the data
+8. npm run watch or npm start // to start server
+7. Login into Heroku and follow the deployment instructions 
+
+``` 
+
 ## Credits
 1. Navbar:  https://www.cssscript.com/header-navbar-templates/
 2. 
