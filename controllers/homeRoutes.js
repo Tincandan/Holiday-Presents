@@ -23,8 +23,9 @@ router.get('/', async (req, res) => {
 
 router.get('/category/:id', async(req, res) => {   
     try {
-        const dbCategoryData = await Category.findByPk(req.params.id, {});
+        const dbCategoryData = await Category.findByPk(req.params.id, {include: Product});
         const category = dbCategoryData.get({ plain: true });
+        console.log(category)
         res.render('category', { category });
     } catch (err) {
         console.log(err);
