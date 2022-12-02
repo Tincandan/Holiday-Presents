@@ -1,6 +1,60 @@
-button,
-.form-contrl: focus {
+i {
+	margin-right: 10px;
+}
+
+.columns {
+	justify-content: center;
+}
+
+input:focus,
+button:focus,
+.form-control:focus {
 	outline: none;
 	box-shadow: none;
 }
 
+.table tr, .table tr td {
+	vertical-align: middle;
+}
+
+.button-container{
+	display: flex;
+	align-items: center;
+}
+
+.button-container .form-control {
+	max-width: 80px;
+	text-align: center;
+	display: inline-block;
+	margin: 0px 5px;
+}
+
+#cartTable .form-control {
+	width:auto;
+	display: inline-block;
+}
+
+.cart-qty-plus,
+.cart-qty-minus {
+	width: 38px;
+	height: 38px;
+	background-color: #fff;
+	border: 1px solid gray;
+	border-radius: .25rem;
+}
+
+.cart-qty-minus:hover,
+.cart-qty-plus:hover {
+	background-color: 3482F6;
+	color: fff;
+}
+
+.img-product {
+	background-color: gray;
+	color: fff;
+	border-radius: 4px;
+}
+
+.img-product img {
+	width: 100%;
+}

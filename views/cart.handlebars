@@ -1,69 +1,61 @@
 {{!-- // Shopping Cart // --}}
 
-{{!-- Container-fluid mt-5 --}}
-<div class="container mt-5">
-{{!-- Table Header // mb-5 text-center --}}
-<h2 class="mb-5  has-text-centered">Shopping Cart</h2> 
-{{!-- Table Row justify-content-center --}}
+<div class="container is-fluid mt-auto">
+  <h2 class="mb-5 has-text-centered">Shopping Cart</h2> 
+<div class="row is-justify-content-center">
+  <div class="columns justify-content-center">
+  <table id="cartTable" class="table">
+      {{!-- // tHead Top Start // --}}
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Name</th>
+          <th>Qty</th>
+          <th>Price</th>
+          <th id="has-text-right" class="amount"><span>Amount</span></th>
+        </tr>
+      </thead>
+        {{!-- tHead Top End --}}
+        {{!-- // tBody Content Start // --}}
+      {{!-- <tbody>
+        <tr>
+          <td>
+            <div class="product-img">
+            <div class="img-product"><figure class="image is-128x128">{{product_image}}</figure>
+            </div>
+            </div>
+          </td>
+          <td><p>{{product_name}}</p>
+          </td>
+          <td>
+            <div class="button-container">
+            <button class="cart-qty-plus" type="button" value="+">+</button>
 
-{{!-- Table Column-md-8 --}}
+            <input type="text" name="qty" min="0" class="qty form-control" value="0">
 
-{{!-- Table-Resposive --}}
-
-{{!-- Table id="cartTable" and class="table" --}}
-
-
-{{!-- tHead Top Start // --}}
-<thead>
-	<tr>
-		<th>Product</th>
-		<th>Name</th>
-		<th>Qty</th>
-		<th>Price</th>
-		{{!-- th class="text-right" span id="amount" class="amount"> Amount /span --}}
-		<th class="amount"><span>Amount</span></th>
-	</tr>
-</thead>
-	{{!-- tHead Top End  // --}}
-	{{!-- tBody Content Start // --}}
-<tbody>
-	<tr>
-		<td>
-			{{!-- div class="product-img" div class="img-product" <img src="1.jpg" --}}
-		</td>
-		
-		<td><p>Product 1</p>
-		</td>
-		
-		<td>
-			{{!-- 
-			div class="button-container" 
-			
-			button class="cart-qty-plus" type="button" value="+" button
-			<span name="qty" min="0" class="qty form-control" value="0"
-			
-		 	 button class="cart-qty-minus" type="button" value="-" button 
-			 <span name="qty" min="0" class="qty form-control" value="0"
-			 div 
-			 --}}
-		</td>
-		
-		<td>
-			{{!-- <span class="price form-control" disabled--}}
-		</td>
-			
-		<td>
-			{{!-- align="right" $ span id="amount class="amount" span --}}
-		</td>
-	</tr>
-</tbody>
-{{!-- tBody Content End // --}}
-{{!-- tFoot Bottom Start // Total amount justified right --}}
-<tfoot>
-	<tr>
-		<th></th>
-	</tr>
-</tfoot>
-{{!-- tFoot Bottom End // --}}
+          <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div> 
+          </td>
+          <td>
+          <span class="price form-control" disabled></span>
+          </td>
+          <td align="right">${{product_price}}<span id="amount" class="amount">0</span>
+          </td>
+        </tr>
+      </tbody> --}}
+      {{!-- tBody Content End  --}}
+      {{!-- // tFoot Bottom Start // --}}
+      <tfoot>
+        <tr>
+          <td colspan="4"></td>
+          <td align="right">
+            <strong>TOTAL = ${{total}}</strong>
+        </tr>
+      </tfoot>
+      {{!-- // tFoot Bottom End // --}}
+      </table>
+    </div>
+  </div>
+</div>
 
 <script src="/js/cart.js"></script>
