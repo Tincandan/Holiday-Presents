@@ -2,9 +2,23 @@ const router = require('express').Router();
 const { Category, Customer, Cart, Product } = require('../models');
 
 // Render homepage view
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
+    try {
+        const dbCategoryData = await Category.findAll();
+      
+          const categories = dbCategoryData.map((category) =>
+            category.get({ plain: true })
+          );
+          // TODO: Send over the 'loggedIn' session variable to the 'homepage' template
+          res.render('homepage', {
+            categories,
+            loggedIn: req.session.logged_in
+          });
+        } catch (err) {
+          console.log(err);
+          res.status(500).json(err);
+        }
     //console.log(req.session.logged_in)
-    res.render('homepage', {loggedIn: req.session.logged_in});
 });
 
 // Render cart view
