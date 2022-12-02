@@ -21,6 +21,17 @@ router.get('/', async (req, res) => {
     //console.log(req.session.logged_in)
 });
 
+router.get('/category/:id', async(req, res) => {   
+    try {
+        const dbCategoryData = await Category.findByPk(req.params.id, {});
+        const category = dbCategoryData.get({ plain: true });
+        res.render('category', { category });
+    } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+    }
+});
+
 // Render cart view
 router.get('/cart', (req, res) => {
     res.render('cart', {loggedIn: req.session.logged_in});
