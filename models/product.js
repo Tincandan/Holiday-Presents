@@ -12,11 +12,19 @@ Product.init(
             autoIncrement: true,
         },
         category_id: {
-            type: DataTypes.STRING,
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
         product_name: {
             type: DataTypes.STRING,
+            allowNull: false,
+        },
+        product_price: {
+            type: DataTypes.DOUBLE,
+            allowNull: false,
+        },
+        product_stock: {
+            type: DataTypes.INTEGER,
             allowNull: false,
         },
     },
