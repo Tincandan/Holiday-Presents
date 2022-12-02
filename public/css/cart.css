@@ -1,0 +1,6 @@
+button,
+.form-contrl: focus {
+	outline: none;
+	box-shadow: none;
+}
+

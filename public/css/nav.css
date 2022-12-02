@@ -1,5 +1,6 @@
 /* Navbar CSS Styling */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 .wrapper {
   max-width: 1140px;
   padding-left: 1rem;
@@ -147,7 +148,7 @@ body {
     font-size: 0;
     width: 34px;
     height: 34px;
-    background: url("../svg/header-3/search.svg") center/22px no-repeat;
+    background: url("../images/svg/header-3/search.svg") center/22px no-repeat;
     border: 0; }
     @media (max-width: 939px) {
       .search__toggle {
@@ -155,7 +156,7 @@ body {
         right: 5.5rem;
         top: 0.65rem; } }
     .search__toggle.active {
-      background: url("../svg/header-5/close.svg") center/22px no-repeat; }
+      background: url("../images/svg/header-5/close.svg") center/22px no-repeat; }
   
   .search__form {
     display: none; }
