@@ -5,9 +5,10 @@
 <div class="row is-justify-content-center">
   <div class="columns justify-content-center">
   <table id="cartTable" class="table">
-      {{!-- // tHead Top Start // --}}
+      {{!-- // thead Top Start // --}}
       <thead>
         <tr>
+          <th></th>
           <th>Product</th>
           <th>Name</th>
           <th>Qty</th>
@@ -15,10 +16,13 @@
           <th id="has-text-right" class="amount"><span>Amount</span></th>
         </tr>
       </thead>
-        {{!-- tHead Top End --}}
-        {{!-- // tBody Content Start // --}}
-      {{!-- <tbody>
+        {{!-- thead Top End --}}
+        {{!-- // tbody Content Start // forEach --}}
+      <tbody>
         <tr>
+          <td class="removeProduct">
+            <button onclick="deleteRow()">x</button>
+          </td>
           <td>
             <div class="product-img">
             <div class="img-product"><figure class="image is-128x128">{{product_image}}</figure>
@@ -39,20 +43,20 @@
           <td>
           <span class="price form-control" disabled></span>
           </td>
-          <td align="right">${{product_price}}<span id="amount" class="amount">0</span>
+          <td align="right">${{product_price}}<span id="amount" class="amount" placeholder="0"></span>
           </td>
         </tr>
-      </tbody> --}}
-      {{!-- tBody Content End  --}}
-      {{!-- // tFoot Bottom Start // --}}
+      </tbody>
+      {{!-- tbody Content End  --}}
+      {{!-- // tfoot Bottom Start // --}}
       <tfoot>
         <tr>
-          <td colspan="4"></td>
+          <td colspan="5"></td>
           <td align="right">
             <strong>TOTAL = ${{total}}</strong>
         </tr>
       </tfoot>
-      {{!-- // tFoot Bottom End // --}}
+      {{!-- // tfoot Bottom End // --}}
       </table>
     </div>
   </div>

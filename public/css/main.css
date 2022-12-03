@@ -7,30 +7,6 @@
     font-family: 'Montserrat','Roboto', sans-serif;
   }
 
-/* Hero Image */
-/* The hero image */
-.hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("");
-  
-    height: 50%;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
-  
-  /* Hero Image */
-  /* Place text in the middle of the image */
-  .hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-  }
-
   .category {
     flex:4;
     background-color: #fff;
@@ -55,5 +31,29 @@
     color: var(--dark);
   }
 
+/* Login styling */
+.login-sigup-container {
+  border-radius: 5px;
+  padding: 10px;
+  background-color:#BEEEFF;
+}
 
-  
+.signup-container, 
+.login-container {
+  padding: 10px;
+}
+
+#password-login, 
+#email-login,
+#username-signup,
+#email-signup,
+#password-signup {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+#signup-h1
+#login-h1 {
+  font-size: medium;
+}

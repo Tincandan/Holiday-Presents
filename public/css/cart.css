@@ -58,3 +58,8 @@ button:focus,
 .img-product img {
 	width: 100%;
 }
+
+.removeProduct {
+	padding: 0px;
+	margin: 0px;
+}

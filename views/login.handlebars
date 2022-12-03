@@ -1,6 +1,8 @@
 {{!-- Loging and Sign up --}}
+{{!-- Loging --}}
+<div class="login-sigup-container">
 <div class='login-container'>
-  <h1>Login</h1>
+  <h2 id="login-h1">Login</h2>
   <form id='login-form'>
     <input type='email' id='email-login' placeholder='Email  *required' />
     <input
@@ -9,13 +11,13 @@
       placeholder='Password  *required'
     />
     <h1 id='signin-status'>Fill in required values</h1>
-    <button id='login-btn' type='submit'>Login</button>
+    <button id='login-btn' class="button is-light" type='submit'>Login</button>
   </form>
 </div>
-<hr>
-<hr>
+
+{{!-- Sign up --}}
 <div class='signup-container'>
-  <h1>Sign up</h1>
+  <h2 id="signup-h1">Sign up</h2>
   <form id='signup-form'>
     <input type='text' id='username-signup' placeholder='Username  *required' />
     <input type='email' id='email-signup' placeholder='Email  *required' />
@@ -25,9 +27,9 @@
       placeholder='Password  *required'
     />
     <h1 id='signup-status'>Fill in all required inputs </h1>
-    <button id='submit-btn' type='submit'>Signup</button>
+    <button id='submit-btn' class="button is-light" type='submit'>Signup</button>
   </form>
 </div>
-
+</div>
 
 <script src="js/login.js"></script>
