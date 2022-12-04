@@ -1,11 +1,15 @@
 {{!-- Product page template --}}
-<section>
-  <div class="column-left">
-    <figure></figure>
+<div class="product-wrapper">
+  <div class="category-name">{{category_name}}</div>
+  <div class="product-img">
+    <figute>
+      <img src="{{product_image}}" alt="">
+    </figute>
   </div>
-
-  <div class="column-left">
-
+  <div class="product-info">
+    <div class="product-title">{{product_name}}</div>
+    <div class="product-price">Price: ${{product_price}}</div>
+    <div class="product-stock">Stock:{{product-stock}}</div>
   </div>
-
-</section>
+  <button class="product-add-to-cart">Add to Cart</button>
+</div>
