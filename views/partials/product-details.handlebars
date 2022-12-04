@@ -1,8 +1,17 @@
-<div class = "card">
+<section class="card-section">
     <a href = "/product/{{product_id}}">
-    <header>{{product_name}}</header>
-    <div class = "card-body">
-        <p><span>Stock: {{product_stock}}</span> <span>Price: ${{product_price}}</span></p>
-    </div>
+        <div class="card-image">
+            <figure class="image">
+                <img src="{{product_image}}" alt="Placeholder image">
+            </figure>
+        </div>
+        <div class="card-content">
+            <div class="content">
+            <h3>{{product_name}}</h3>
+            <p>Stock: {{product_stock}}</p>
+            <p>Price: ${{product_price}}</p>
+            <strong>ship to home</strong>
+            <p>get it in 5-7 business days</p>
+        </div>
     </a>
-</div>
+</section>
