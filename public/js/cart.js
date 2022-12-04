@@ -1,5 +1,41 @@
 // Shopping Cart //
 
+// forEach product placed into the cart generate a row
+function renderProduct(productArr) {
+    productArr.forEach((product) => {
+      const tBody = document.getElementsByTagName('tbody');
+      const rowEl = document.createElement('tr');
+      rowEl.innerHTML = `
+      <td class="removeProduct">
+            <button onclick="deleteRow()">x</button>
+          </td>
+          <td>
+            <div class="product-img">
+            <div class="img-product"><figure class="image is-128x128">{{product_image}}</figure>
+            </div>
+            </div>
+          </td>
+          <td><p>{{product_name}}</p>
+          </td>
+          <td>
+            <div class="button-container">
+            <button class="cart-qty-plus" type="button" value="+">+</button>
+
+            <input type="text" name="qty" min="0" class="qty form-control" value="0">
+
+          <button class="cart-qty-minus" type="button" value="-">-</button>
+            </div> 
+          </td>
+          <td>
+          <span class="price form-control" disabled></span>
+          </td>
+          <td align="right">$ {{product_price}}<span id="amount" class="amount" placeholder="0"></span>
+          </td>
+          `;
+          tBody.appendChild(rowEl);
+    });
+}
+
 //--- Update Qty and Price ---/
 $(document).ready(function() {
   update_amounts();
@@ -47,15 +83,9 @@ decrementQty = minusBtn.click(function(){
   update_amounts();
 });
 
-// forEach product placed into the cart generate a tbody
-
-
-
-
-// delete one product-row in tbody
+// delete one product-row in tbody cart
 var table = document.getElementById('table');
 var row = document.getElementsByTagName('tbody')[0];
-
 
 function deleteRow () {
     row.parentNode.removeChild(row);

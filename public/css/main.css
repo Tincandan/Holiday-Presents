@@ -22,14 +22,8 @@
     height: auto;
   }
 
-  .card {
-    margin: 20px;
-    flex: 0 1 300px;
-    border: 7px double var(--dark);
-    border-radius: 10px;
-    background-color: var(--light);
-    color: var(--dark);
-  }
+  /* Category Product Styling */
+
 
 /* Login styling */
 .login-sigup-container {
