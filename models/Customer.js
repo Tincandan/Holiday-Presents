@@ -39,6 +39,7 @@ Customer.init(
                 len:[6],
             },
         },
+        // Make a table for an array of product IDS
     },
     {
         hooks: {

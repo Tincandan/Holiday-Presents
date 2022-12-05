@@ -73,4 +73,6 @@ router.post('/logout', (req, res) => {
     }
 });
 
+// Put route to update and add onto that saved product ids table
+
 module.exports = router;
