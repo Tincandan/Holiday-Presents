@@ -33,6 +33,19 @@ router.get('/category/:id', async(req, res) => {
     }
 });
 
+router.get('/product/:id', async (req, res) => {   
+  try {
+      const dbProductData = await Product.findByPk(req.params.id);
+      console.log(dbProductData);
+      const product = dbProductData.get({ plain: true });
+      console.log(product)
+      res.render('product', product);
+  } catch (err) {
+      console.log(err);
+      res.status(500).json(err);
+  }
+});
+
 // Render cart view
 router.get('/cart', (req, res) => {
     res.render('cart', {loggedIn: req.session.logged_in});

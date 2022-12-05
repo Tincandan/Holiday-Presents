@@ -1,4 +1,7 @@
 // Shopping Cart //
+// Focus on getting add to cart button to save user's saved items, make a table in your user table that is an array of product ids 
+// Create an api route to get user's saved products ids and use this information for the productArr
+// Run a fetch to get cart data, then you can assign that cart data to be your productArr
 
 // forEach product placed into the cart generate a row
 function renderProduct(productArr) {
@@ -11,11 +14,11 @@ function renderProduct(productArr) {
           </td>
           <td>
             <div class="product-img">
-            <div class="img-product"><figure class="image is-128x128">{{product_image}}</figure>
+            <div class="img-product"><figure class="image is-128x128">${product_image}</figure>
             </div>
             </div>
           </td>
-          <td><p>{{product_name}}</p>
+          <td><p>${product_name}</p>
           </td>
           <td>
             <div class="button-container">

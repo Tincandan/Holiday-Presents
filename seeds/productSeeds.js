@@ -4,7 +4,7 @@ const productData = [
     // Thanksgiving
   {
     product_name: 'wire pumpkin halloween decor',
-    product_image: 'public/images/products/wired-pumpkin.jpg',
+    product_image: '/images/products/wired-pumpkin.jpg',
     product_price: 4.00,
     product_stock: 20,
     category_id: 2,
