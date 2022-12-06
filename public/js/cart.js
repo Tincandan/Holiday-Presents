@@ -40,6 +40,7 @@ function renderProduct(productArr) {
 }
 
 //--- Update Qty and Price ---/
+var $ = jQuery;
 $(document).ready(function() {
   update_amounts();
   $('.qty, .price').on('keyup keypress blur change',
