@@ -33,7 +33,7 @@ SO THAT my small business can compete with other e-commerce business
 - CSS Framework: https://bulma.io/
 
 ## Mockup
-
+<img scr="/images/products/holiday_presents.png">
 
 ## Future Development
 - Users can edit their sign in credentials 

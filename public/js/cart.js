@@ -1,4 +1,5 @@
 // Shopping Cart //
+
 // Focus on getting add to cart button to save user's saved items, make a table in your user table that is an array of product ids 
 // Create an api route to get user's saved products ids and use this information for the productArr
 // Run a fetch to get cart data, then you can assign that cart data to be your productArr
