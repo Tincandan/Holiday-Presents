@@ -55,4 +55,3 @@ SO THAT my small business can compete with other e-commerce business
 
 ## Credits
 1. Navbar:  https://www.cssscript.com/header-navbar-templates/
-2. 

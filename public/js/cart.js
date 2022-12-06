@@ -32,7 +32,7 @@ function renderProduct(productArr) {
           <td>
           <span class="price form-control" disabled></span>
           </td>
-          <td align="right">$ {{product_price}}<span id="amount" class="amount" placeholder="0"></span>
+          <td align="right">$ ${product_price}<span id="amount" class="amount" placeholder="0"></span>
           </td>
           `;
           tBody.appendChild(rowEl);
