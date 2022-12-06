@@ -1,7 +1,7 @@
 const Customer = require('./Customer');
 const Category = require('./Category');
 const Cart = require('./Cart');
-const Product = require('./Product');
+const Product = require('./product');
 
 Category.hasMany(Product, {
     foreignKey: 'category_id',
